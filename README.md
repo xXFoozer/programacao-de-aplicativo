@@ -1,1 +1,1 @@
-https://www.google.com/imgres?q=typescript&imgurl=https%3A%2F%2Fhermes.dio.me%2Farticles%2Fcover%2Ffb641ee6-0898-4a1d-8f6a-b7816e787c22.png&imgrefurl=https%3A%2F%2Fwww.dio.me%2Farticles%2Ftypescript-voce-ja-deveria-saber-usar-um-guia-para-iniciantes&docid=BcRUMEww4zr__M&tbnid=Ls290RkJ4llpTM&vet=12ahUKEwiZyuDmgoSIAxVtupUCHXvpAfgQM3oECBwQAA..i&w=740&h=405&hcb=2&ved=2ahUKEwiZyuDmgoSIAxVtupUCHXvpAfgQM3oECBwQAA
+
