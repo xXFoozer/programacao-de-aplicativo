@@ -1,59 +1,16 @@
-import leia from 'readline-sync';
+import leia from 'readline-sync'
 
-var idades: number[]= [];
-var nomes: string[]= [];
+var nomeCategoria = leia.question("INFORME O NOME DA CATEGORIA: ")
+var descCategoria = leia.question("INFORME A DESCRIÇAO DA CATEGORIA: ")
 
-var nomeNova: string;
-var idadeNova: number;
-
-var nomeVelha: string;
-var idadeVelha: number;
-
-function pedirInfoUsuario(qtd: number){
-    for(var i =0; i < qtd ; i++){
-        var nome = leia.question("INFORME O NOME: ");
-        nomes.push(nome);
-        var idade = leia.questionInt("INFORME A IDADE: ");
-        idades.push(idade);
-    }
+const categoria: Categoria = {
+    
 }
 
-function pessoaMaisNova(){
-    for(var i=0; i < idades.length; i++){
-        if(idadeNova === undefined || idades[i] < idadeNova){
-            idadeNova = idades[i]
-            nomeNova = nomes[i]
-        }
-    }
-    console.log(`A PESSOA MAIS NOVA É ${nomeNova} COM ${idadeNova} ANOS.\n`)
-}
 
-function pessoaMaisVelha(){
-    idades.forEach((idade, index)=> {
-        if(!idadeVelha|| idade > idadeVelha){
-            idadeVelha = idade
-            nomeVelha = nomes[index]
-        }
-    })
-    console.log(`A PESSOA MAIS VELHA É ${nomeVelha} COM ${idadeVelha} ANOS.\n`)
-}
+console.log("--------------------------------------------------------")
 
-pedirInfoUsuario(5);
-pessoaMaisNova();
-pessoaMaisVelha();
-
-
-
-
-
-
-
-
-// var nome: string = "Germano";
-
-// console.log(nome);
-
-// function somar(valorUm: number, valorDois: number ){
-//     return valorUm + valorDois
-// }
-// somar(1, 3)
+var nomeProduto = leia.question("INFORME O NOME DA produto:")
+var preco = leia.question("INFORME O preco DA produto: ")
+var codigo = leia.question("INFORME O codigo DA produto: ")
+var marca = leia.question("INFORME O marca DA produto: ")
