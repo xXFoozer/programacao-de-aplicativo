@@ -3,9 +3,6 @@ import leia from 'readline-sync'
 var nomeCategoria = leia.question("INFORME O NOME DA CATEGORIA: ")
 var descCategoria = leia.question("INFORME A DESCRIÇAO DA CATEGORIA: ")
 
-const categoria: Categoria = {
-    
-}
 
 
 console.log("--------------------------------------------------------")
