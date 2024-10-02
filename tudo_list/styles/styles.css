@@ -92,5 +92,5 @@ body {
 }
 
 .completed {
-    background-color: #dcedc8;
+    background-color: #dcedc8 !important;
 }

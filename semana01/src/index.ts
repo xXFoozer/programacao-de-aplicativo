@@ -1,13 +1,26 @@
 import leia from 'readline-sync'
+import { Categoria, Produto } from './repository/Produto'
 
 var nomeCategoria = leia.question("INFORME O NOME DA CATEGORIA: ")
-var descCategoria = leia.question("INFORME A DESCRIÇAO DA CATEGORIA: ")
-
-
+var descCategoria = leia.question("INFORME O DESCRICAO DA CATEGORIA: ")
+const categoria: Categoria = {
+    nome: nomeCategoria,
+    descricao: descCategoria
+}
 
 console.log("--------------------------------------------------------")
 
-var nomeProduto = leia.question("INFORME O NOME DA produto:")
-var preco = leia.question("INFORME O preco DA produto: ")
-var codigo = leia.question("INFORME O codigo DA produto: ")
-var marca = leia.question("INFORME O marca DA produto: ")
+var nomeProduto = leia.question("INFORME O NOME DO PRODUTO: ")
+var preco = leia.questionFloat("INFORME O PREÇO DO PRODUTO: ")
+var codigo = leia.question("INFORME O CÓDIGO DO PRODUTO: ")
+var marca = leia.question("INFORME O MARCA DO PRODUTO: ")
+
+const produto: Produto = {
+    nome: nomeProduto,
+    preco: preco,
+    codigo: codigo,
+    marca: marca,
+    categoria: categoria
+}
+
+console.log(produto);

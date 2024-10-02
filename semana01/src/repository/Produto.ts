@@ -1,10 +1,10 @@
-type Categoria ={
+export type Categoria ={
    nome: string;
    
-   descricao: boolean;
+   descricao:string;
 }
 
-type Produto={
+export type Produto={
     nome:string;
     preco: number;
     codigo: string;
