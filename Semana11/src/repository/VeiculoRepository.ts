@@ -40,7 +40,7 @@ export default class VeiculoRepository {
         try {
             this.connection.connect();
             const sql = "SELECT * FROM veiculos WHERE esta_ativo = $1";
-            const result = await this.connection.query(sql);
+            const result = await this.connection.query(sql , [true]);
             return result.rows;
            
 
@@ -58,7 +58,7 @@ export default class VeiculoRepository {
             this.connection.connect()
             const sql = "SELECT * FROM veiculos WHERE id = $1";
             const result = await this.connection.query(sql,[id])
-            return result.rows;
+            return result.rows[0];
         } catch (error) {
             console.log(error)
         }finally{
