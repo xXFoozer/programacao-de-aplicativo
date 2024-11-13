@@ -1,7 +1,7 @@
 import{v4 as uuid }from 'uuid';
 
 
-export default class Ususario{
+export default class Usuario{
     private id: string
     private name: string
     private email: string
@@ -11,11 +11,11 @@ export default class Ususario{
     private atualizado_em:Date
 
 
-    constructor(name:string, email: string, password: string, data_nascimento: Date){
+    constructor(name:string, email: string, password: string, data_nacimento: Date){
         this.id = uuid()
         this.name= name;
         this.email= email;
-        this.data_nacimento= data_nascimento;
+        this.data_nacimento= data_nacimento;
         this.criado_em= new Date();
         this.atualizado_em = new Date();
        this.password = password;
@@ -23,24 +23,30 @@ export default class Ususario{
 
 
     public getId(){
-        return this.id
+        return this.id;
     }
+
     public getName(){
-        return this.name
+        return this.name;
     }
-    public getEmail(){
-        return this.email
+
+    public getEmail() {
+        return this.email;
     }
+
     public getPassword(){
-        return this.password
+        return this.password;
     }
-    public getData_nascimento(){
-        return this.data_nacimento
+
+    public getDataNascimento(){
+        return this.data_nacimento;
     }
-    public getCriado_em(){
-        return this.criado_em
+
+    public getCriadoEm() {
+        return this.criado_em;
     }
-    public getAtualizado_em(){
-        return this.atualizado_em
+
+    public getAtualizadoEm() {
+        return this.atualizado_em;
     }
 }
