@@ -5,17 +5,17 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
+  provider   = "prisma-client-js"
   engineType = ""
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgresql://postgres:senai@localhost:5432/exemplo-prisma?schema=public"
 }
 
-model Usuario{
-  id    String @id
+model Usuario {
+  id    String  @id
   name  String
   email String? @unique
   senha String
@@ -23,3 +23,14 @@ model Usuario{
   @@map("usuario")
 }
 
+model Produto {
+  id           String   @id
+  name         String
+  category     String
+  manufacturer String
+  amount       Int
+  updatedAt    DateTime
+  createdAt    DateTime
+
+  @@map("produto")
+}
